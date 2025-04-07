@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: #f6f7fb;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-header .menu-header ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 14px;
+}
