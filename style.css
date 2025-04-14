@@ -7,6 +7,9 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+nav {
+    font-family: "Fjalla One", sans-serif;
+}
 .navbar-header {
     display: flex;
     justify-content: space-between;
@@ -19,3 +22,80 @@ body {
     display: flex;
     gap: 14px;
 }
+.menu-header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #656d78;
+    padding: 25px;
+    transition: 0.25s;
+    line-height: 20px;
+    font-size: 13px;
+}
+.menu-header a:hover {
+    color: #50c1e9;
+}
+.head-inner {
+    position: relative;
+    font-family: "Fjalla One", sans-serif;
+}
+.head-inner .head-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.head-inner .header-title-block {
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    right: 38%;
+    text-align: center;
+}
+.head-inner .header-title-block h5 {
+    background: rgba(0, 0, 0, .4);
+    color: #ffffff;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 3px;
+}
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+footer ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+footer ul li {
+    position: relative;
+}
+footer ul a:hover span {
+    display: inline;
+}
+footer ul span {
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    right: -25px;
+    width: 60px;
+    background-color: #50c1e9;
+    color: #ffffff;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Fjalla One", sans-serif;
+}
+footer ul a:hover span:after {
+    border-top: 3px solid #50c1e9;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -4px;
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+} 
