@@ -1,7 +1,9 @@
 :root {
     --white: #ffffff;
     --aqua: #50c1e9;
-     --orage: #fb6e52;
+    --orage: #fb6e52;
+    --contect-border: #e6e9ee;
+    --content-link: #434a54;
 }
 
 body {
@@ -12,6 +14,110 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.row {
+    display: flex;
+    margin: 70px 0;
+}
+.leftcolumn {
+    width: 75%;
+}
+.rightcolumn {
+    width: 25%;
+}
+article .feature {
+    width: 100%;
+}
+article .content {
+    padding: 40px 70px 4px;
+    background-color: var(--white);
+    border: solid 1px var(--contect-border);
+}
+article a {
+    color: var(--content-link);
+}
+.slides h5,
+article h5 {
+    color: #434a54;
+    font-size: 16px;
+    font-family: "Fjalla One", sans-serif;
+    margin: 0;
+    padding: 5px 0 13px;
+} 
+.slides hr,
+article hr {
+    border: solid 1px #e6e9ee;
+}
+.homepage-latest-posts .content ul,
+article ul,
+.comment-list ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 10px 0;
+    font: 12px 'Fjalla One', sans-serif;
+    transition: 0.3s;
+}
+.homepage-latest-posts .content ul a,
+article ul a,
+article .tags i,
+.comment-list a {
+    color: #949ba6;
+    text-decoration: none;
+}
+.homepage-latest-posts .content ul ul,
+article ul ul {
+    margin: 0;
+}
+.slides .pull-right li:last-child a:hover,
+article .pull-right li:last-child a:hover,
+.comment-list .pull-right li:last-child a:hover{
+    color: var(--orage);
+}
+.homepage-latest-posts .content .pull-right li:last-child a,
+article .pull-right li:last-child a,
+.comment-list .pull-right li:last-child a{
+    position: relative;
+}
+.homepage-latest-posts h5 a:hover,
+.homepage-latest-posts .content ul a:hover,
+article .pull-right a:hover,
+.comment-list .pull-right a:hover {
+    color: var(--aqua);
+}
+.homepage-latest-posts .content .pull-right li:last-child span,
+article .pull-right li:last-child span,
+.comment-list .pull-right li:last-child span {
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    color: var(--white);
+    background-color: var(--orage);
+    font: 12px 'Fjalla One', sans-serif;
+    padding: 4px;
+    right: -4px;
+    border-radius: 4px;
+}
+.homepage-latest-posts .content .pull-right li:last-child span::after,
+article .pull-right li:last-child span::after,
+.comment-list .pull-right li:last-child span::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -4px;
+    width: 0;
+    height: 0;
+    border-top: 3px solid var(--orage);
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.homepage-latest-posts .content .pull-right li:last-child a:hover span,
+article .pull-right li:last-child a:hover span,
+.comment-list  .pull-right li:last-child a:hover span{
+    display: inline;
 }
 nav {
     font-family: "Fjalla One", sans-serif;
@@ -86,7 +192,7 @@ nav {
 p {
   color: #656d78;
   font-size: 12px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", sans-serif;
   margin: 0;
   line-height: 22px;
 }
@@ -97,16 +203,7 @@ p {
     margin: 0;
     line-height: 22px;
 }
-.slides h5 {
-    color: #434a54;
-    font-size: 16px;
-    font-family: "Fjalla One", sans-serif;
-    margin: 0;
-    padding: 5px 0 13px;
-} 
-.slides hr {
-    border: solid 1px #e6e9ee;
-}
+
 .list-inline-buton, 
 .pull-right {
     padding: 0;
@@ -147,9 +244,7 @@ p {
 .slides .pull-right li:first-child a:hover {
     color: var(--aqua);
 }
-.slides .pull-right li:last-child a:hover {
-    color: var(--orage);
-}
+
 .slides .pull-right li:last-child a:hover span {
     display: inline;
 }
@@ -221,59 +316,10 @@ p {
     font: 16px 'Fjalla One', sans-serif;
     transition: 0.3s;
 }
-.homepage-latest-posts h5 a:hover,
-.homepage-latest-posts .content ul a:hover {
-    color: var(--aqua);
-}
-.homepage-latest-posts .content ul {
-    display: flex;
-    padding: 0;
-    list-style-type: none;
-    justify-content: space-between;
-    gap: 12px;
-    margin: 10px 0;
-    font: 12px 'Fjalla One', sans-serif;
-    transition: 0.3s;
-}
-.homepage-latest-posts .content ul a {
-    color: #949ba6;
-    text-decoration: none;
-}
-.homepage-latest-posts .content ul ul {
-    margin: 0;
-}
-.homepage-latest-posts .content .pull-right li:last-child a {
-    position: relative;
-}
 .homepage-latest-posts .content .pull-right li:last-child a:hover {
     color: var(--orage);
 }
-.homepage-latest-posts .content .pull-right li:last-child span {
-    display: none;
-    position: absolute;
-    bottom: 25px;
-    color: var(--white);
-    background-color: var(--orage);
-    font: 12px 'Fjalla One', sans-serif;
-    padding: 4px;
-    right: -4px;
-    border-radius: 4px;
-}
-.homepage-latest-posts .content .pull-right li:last-child span::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -4px;
-    width: 0;
-    height: 0;
-    border-top: 3px solid var(--orage);
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-}
-.homepage-latest-posts .content .pull-right li:last-child a:hover span {
-    display: inline;
-}
+
 .big-button {
     text-align: center;
     margin: 0 0 70px;
@@ -293,6 +339,59 @@ p {
     color: var(--white);
     background-color: var(--aqua);
 }
+
+/* Single posts  */
+
+.list-inline-photo {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    gap: 14px;
+}
+article h3 {
+    font: 12px 'Roboto Slab', sans-serif;
+    text-transform: lowercase;
+}
+.comment-list {
+    margin-top: 50px;
+}
+.comment-list h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #656d78;
+    margin-bottom: 16px;
+}
+
+.comment-list .comment {
+    display: flex;
+    gap: 30px;
+}
+.comment-list .comment .content {
+    background-color: var(--white);
+    padding: 13px 20px 14px;
+    border: solid 1px var(--contect-border)
+}
+.comment-list h4 {
+    font: 14px 'Fjalla One', sans-serif;
+    color: var(--content-link);
+    margin: 3px 0 11px;
+}
+.reply {
+    margin: 30px 0 30px 100px;
+}
+.leave-comment input[type='file'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Single post end */
+
+/* Sidebar block */
+
+/* Sidebar block end */
+
 footer .row {
     display: flex;
     justify-content: space-between;

@@ -13,7 +13,137 @@
 </head>
 <body>
     <div w3-include-html="header.html"></div> 
-    <h1>Single page</h1>
+    <div class="container">
+        <div class="row">
+            <div class="leftcolumn">
+                <article>
+                    <img class="feature" src="images/blog-post.jpg" alt="Post image">
+                    <div class="content">
+                        <p class="time">2025-05-05</p>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <br>
+                        <p>
+                            Proin suscipit, urna vel interdum egestas, turpis mauris sagittis arcu, vitae luctus enim leo id sem. Cras ut urna vitae nulla tincidunt elementum. In sit amet est nec lorem tristique cursus a in justo. Phasellus non dui a ligula commodo pretium. Nulla a metus tincidunt, hendrerit turpis eget, sollicitudin orci. Aenean sit amet velit erat. Donec sed arcu sollicitudin, vehicula lacus vitae, pharetra lectus. Pellentesque id arcu eget massa rhoncus gravida sit amet a mi.
+                            <br>
+                            <br>
+                            Soluta commodi, dignissimos sint reprehenderit asperiores magni incidunt animi impedit eveniet illo ex aspernatur ut saepe explicabo consequatur odit voluptatibus provident assumenda iusto optio culpa similique dolores recusandae numquam. Dignissimos.
+                        </p>
+                        <ul class="list-inline-photo">
+                            <li><a href="#"><img src="images/pic-2.jpg" alt="Post image 1"></a></li>
+                            <li><a href="#"><img src="images/pic-2.jpg" alt="Post image 2"></a></li>
+                            <li><a href="#"><img src="images/pic-2.jpg" alt="Post image 3"></a></li>
+                            <li><a href="#"><img src="images/pic-2.jpg" alt="Post image 4"></a></li>
+                        </ul>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur <a href="#">adipisicing elit</a>. Inventore minima atque nihil cumque assumenda numquam eligendi, dolor unde corrupti quia laborum distinctio iure, sunt quae. Eos voluptatibus sit quis beatae.
+                            <br>
+                            <br>
+                            Officia ipsa veritatis distinctio vero nam, quo facilis dolores quaerat omnis excepturi nesciunt quos voluptate, id ea magnam tempore molestias, ducimus minima optio consectetur ipsam impedit in reiciendis? Dolorem, incidunt?
+                        </p>
+                        <br>
+                        <hr>
+                        <ul>
+                            <li class="tags">
+                                <h3>
+                                    <i class="fa fa-tags"></i>
+                                    <a href="#">#nature</a>
+                                    <a href="#">#landscape</a>
+                                    <a href="#">#flowers</a>
+                                    <a href="#">#travel</a>
+                                    <a href="#">#photography</a>
+                                    <a href="#">#forest</a>
+                                </h3>
+                            </li>
+                            <li class="pull-right">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-share-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-heart"></i> 
+                                            <span>21</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- comment block -->
+                 <div class="comment-list">
+                    <h5>comments</h5>
+                    <div class="comment">
+                        <div>
+                            <img width="70" height="70" src="images/member-1.jpg" alt="Comment image">
+                        </div>
+                        <div class="content">
+                            <p class="time">2025-05-05 14:31</p>
+                            <ul  class="pull-right">
+                                <li><a href="#"><i class="fa fa-mail-forward"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i> <span>14</span></a></li>
+                            </ul>
+                            <h4>Harold D. Elliott</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus tempora tempore repellendus, eum voluptas ipsam porro facilis enim nobis, ipsum expedita iure magnam quia voluptatibus minus vel, officia nulla.</p>
+                        </div>
+                    </div>
+                    <div class="comment reply">
+                        <div>
+                            <img width="70" height="70" src="images/member-2.jpg" alt="Comment image">
+                        </div>
+                        <div class="content">
+                            <p class="time">2025-05-05 14:31</p>
+                            <ul  class="pull-right">
+                                <li><a href="#"><i class="fa fa-mail-forward"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i> <span>14</span></a></li>
+                            </ul>
+                            <h4>Clara M. Young</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus tempora tempore repellendus, eum voluptas ipsam porro facilis enim nobis, ipsum expedita iure magnam quia voluptatibus minus vel, officia nulla.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div>
+                            <img width="70" height="70" src="images/member-1.jpg" alt="Comment image">
+                        </div>
+                        <div class="content">
+                            <p class="time">2025-05-05 14:31</p>
+                            <ul  class="pull-right">
+                                <li><a href="#"><i class="fa fa-mail-forward"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i> <span>14</span></a></li>
+                            </ul>
+                            <h4>Harold D. Elliott</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus tempora tempore repellendus, eum voluptas ipsam porro facilis enim nobis, ipsum expedita iure magnam quia voluptatibus minus vel, officia nulla.</p>
+                        </div>
+                    </div>
+                 </div>
+                <div class="leave-comment">
+                    <h5>leave a comment</h5>
+                    <form>
+                        <div>
+                            <label>
+                                <input type="file" name="file" id="file">
+                                <div class="photo">
+                                    <i class="fa fa-camera"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="condent">
+                            <p class="time">2025-05-05 14:02</p>
+                            <input placeholder="Name" type="text" name="text" id="text">
+                            <textarea placeholder="Comment" name="textarea" id="textarea"></textarea>
+                        </div>
+                        <button>Send</button>
+                    </form>
+                </div> 
+            </div>
+            <div class="rightcolumn">
+
+            </div>
+        </div>
+    </div>
     <div w3-include-html="footer.html"></div>
     <script src="script.js"></script>
 </body>
