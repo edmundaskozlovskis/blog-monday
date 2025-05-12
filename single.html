@@ -122,25 +122,29 @@
                 <div class="leave-comment">
                     <h5>leave a comment</h5>
                     <form>
-                        <div>
-                            <label>
-                                <input type="file" name="file" id="file">
-                                <div class="photo">
-                                    <i class="fa fa-camera"></i>
-                                </div>
-                            </label>
+                        <div class="form-inner">
+                            <div>
+                                <label>
+                                    <input type="file" name="file" id="file">
+                                    <div class="photo">
+                                        <i class="fa fa-camera"></i>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="content">
+                                <p class="time">2025-05-05 14:02</p>
+                                <input placeholder="Name" type="text" name="text" id="text">
+                                <textarea placeholder="Comment" name="textarea" id="textarea"></textarea>
+                            </div>
                         </div>
-                        <div class="condent">
-                            <p class="time">2025-05-05 14:02</p>
-                            <input placeholder="Name" type="text" name="text" id="text">
-                            <textarea placeholder="Comment" name="textarea" id="textarea"></textarea>
+                        <div class="btn">
+                            <button>Send</button>
                         </div>
-                        <button>Send</button>
                     </form>
                 </div> 
             </div>
             <div class="rightcolumn">
-
+                <div w3-include-html="sidebar.html"></div>
             </div>
         </div>
     </div>

@@ -18,6 +18,7 @@ body {
 .row {
     display: flex;
     margin: 70px 0;
+    gap: 30px;
 }
 .leftcolumn {
     width: 75%;
@@ -362,11 +363,14 @@ article h3 {
     margin-bottom: 16px;
 }
 
-.comment-list .comment {
+.comment-list .comment,
+.form-inner {
     display: flex;
     gap: 30px;
 }
-.comment-list .comment .content {
+.comment-list .comment .content,
+.leave-comment .content,
+.sidebar .categories-content {
     background-color: var(--white);
     padding: 13px 20px 14px;
     border: solid 1px var(--contect-border)
@@ -379,17 +383,150 @@ article h3 {
 .reply {
     margin: 30px 0 30px 100px;
 }
+.leave-comment h5 {
+    margin-bottom: 16px;
+    font: 18px 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    color: #656d78;
+}
 .leave-comment input[type='file'] {
     position: absolute;
     width: 1px;
     height: 1px;
     overflow: hidden;
 }
+.leave-comment .photo {
 
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border: 1px dashed #ccd0d9;
+    cursor: pointer;
+    color: #ccd0d9;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.leave-comment .photo:hover {
+    color: #aab2bd;
+    border-color: #aab2bd;
+}
+.leave-comment .content,
+.leave-comment .content textarea {
+    width: 100%;
+}
+.leave-comment .content input,
+.leave-comment .content textarea {
+    display: block;
+    border: 1px dashed #ccd0d9;
+}
+.leave-comment .content input {
+    margin: 4px 0 20px;
+    padding: 0 20px;
+    line-height: 30px;
+
+}
+.leave-comment .content textarea {
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+.leave-comment .btn {
+    text-align: end;
+    margin-top: 20px;
+}
+.leave-comment .btn button {
+    color: var(--aqua);
+    border: solid 1px var(--aqua);
+    background-color: transparent;
+    text-transform: uppercase;
+    font:  12px 'Fjalla One', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+}
+.leave-comment .btn button:hover {
+    color: var(--white);
+    background-color: var(--aqua);
+} 
 /* Single post end */
 
 /* Sidebar block */
 
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar > ul > li {
+    margin-bottom: 30px;
+}
+.sidebar ul li input {
+    line-height: 30px;
+    padding: 0 20px;
+    border: 1px solid #e6e9ee;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: calc( 100% - 50px );
+    margin-right: -4px;
+}
+.sidebar ul li button {
+    width: 50px;
+    height: 30px;
+    background-color: var(--aqua);
+    color: var(--white);
+    border: solid 1px var(--aqua);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sidebar ul li button:hover {
+    background-color: #434a54;
+    border-color: #434a54;
+}
+.sidebar h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    font: 16px 'Fjalla One', sans-serif;
+    background-color: #656d78;
+    padding: 0 30px;
+    line-height: 50px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin: 0;
+}
+.sidebar .categories-content {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.sidebar .categories-content a {
+    text-decoration: none;
+    color: #656d78;
+    font: 12px "Roboto Slab", serif;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.sidebar .categories-content a:hover {
+    color: var(--aqua);
+}
+.sidebar .categories-content a:hover span {
+    background-color: var(--aqua);
+    color: var(--white);
+}
+.sidebar .categories-content a span {
+    float: right;
+    background-color: #e6e9ee;
+    text-align: center;
+    min-width: 18px;
+    border-radius: 3px;
+    padding: 0 2px;
+}
+.sidebar .categories-content li {
+    margin-bottom: 2px;
+}
 /* Sidebar block end */
 
 footer .row {
