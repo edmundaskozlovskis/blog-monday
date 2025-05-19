@@ -13,7 +13,49 @@
 </head>
 <body>
     <div w3-include-html="header.html"></div> 
-    <h1>Contact Page</h1>
+    <div class="container">
+        <div class="row">
+            <div class="leftcolumn">
+                <section>
+                    <img class="feature" src="images/blog-post.jpg" alt="Post image">
+                    <div class="content">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <br>
+                        <p>
+                            Proin suscipit, urna vel interdum egestas, turpis mauris sagittis arcu, vitae luctus enim leo id sem. Cras ut urna vitae nulla tincidunt elementum. In sit amet est nec lorem tristique cursus a in justo. Phasellus non dui a ligula commodo pretium. Nulla a metus tincidunt, hendrerit turpis eget, sollicitudin orci. Aenean sit amet velit erat. Donec sed arcu sollicitudin, vehicula lacus vitae, pharetra lectus. Pellentesque id arcu eget massa rhoncus gravida sit amet a mi.
+                            <br>
+                            <br>
+                            Soluta commodi, dignissimos sint reprehenderit asperiores magni incidunt animi impedit eveniet illo ex aspernatur ut saepe explicabo consequatur odit voluptatibus provident assumenda iusto optio culpa similique dolores recusandae numquam. Dignissimos.
+                        </p>
+                        <h5>leave a comment</h5>
+                        <form>
+                            <div class="form-inner">
+                                <div>
+                                    <label>
+                                        <input type="file" name="file" id="file">
+                                        <div class="photo">
+                                            <i class="fa fa-camera"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="content">
+                                    <p class="time">2025-05-05 14:02</p>
+                                    <input placeholder="Name" type="text" name="text" id="text">
+                                    <textarea placeholder="Comment" name="textarea" id="textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button>Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="rightcolumn">
+                <div w3-include-html="sidebar.html"></div>
+            </div>
+        </div>
+    </div>
     <div w3-include-html="footer.html"></div>
     <script src="script.js"></script>
 </body>

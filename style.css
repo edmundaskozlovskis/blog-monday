@@ -370,7 +370,11 @@ article h3 {
 }
 .comment-list .comment .content,
 .leave-comment .content,
-.sidebar .categories-content {
+.sidebar .categories-content,
+.sidebar .popular-posts,
+.sidebar .latest-tweets,
+.sidebar .popular-tags,
+.about-page .content-block {
     background-color: var(--white);
     padding: 13px 20px 14px;
     border: solid 1px var(--contect-border)
@@ -527,8 +531,95 @@ article h3 {
 .sidebar .categories-content li {
     margin-bottom: 2px;
 }
+.sidebar .popular-posts a  {
+    color: #656d78;
+    text-decoration: none;
+    font: 12px / 22px "Roboto Slab", serif;
+    transition: 0.3s;
+}
+.sidebar .popular-posts a:hover,
+.sidebar .popular-tags a:hover  {
+    color: var(--aqua);
+}
+.sidebar .latest-tweets i {
+    color: var(--aqua);
+    padding-top: 5px;
+}
+.sidebar .latest-tweets li {
+    display: flex;
+    gap: 15px;
+}
+.sidebar .latest-tweets p {
+    font: 12px / 22px "Roboto Slab", serif;
+}
+.sidebar .latest-tweets span {
+    display: block;
+    color: #ccd0d9;
+}
+.sidebar .popular-tags {
+    text-align: center;
+}
+.sidebar .popular-tags a {
+    color: #656d78;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    transition: 0.3s;
+}
+.sidebar .popular-tags p {
+    color: #656d78;
+    font: 12px / 22px "Roboto Slab", serif;
+    display: inline-block;
+}
+.sidebar .popular-tags .font-14 {
+    font-size: 14px;
+}
+.sidebar .popular-tags .font-16 {
+    font-size: 16px;
+}
+.sidebar .popular-tags .font-18 {
+    font-size: 18px;
+}
 /* Sidebar block end */
 
+/* About page */
+.about-page .main {
+    max-width: 750px;
+    margin: 70px auto 0;
+}
+.about-page .main img {
+    width: 100%;
+    display: block
+}
+.about-page .main .text {
+    padding: 10px 30px 0;
+}
+.about-page .main h5 {
+    margin: 0 0 20px;
+    color: #434a54;
+    font: 16px 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+}
+.about-page .main .text > p {
+    margin-bottom: 45px;
+}
+.about-page .main .text .progress-base-bar p {
+    padding: 4px  20px;
+    color: var(--white);
+}
+.about-page .main .progress-base-bar {
+    background-color: #eeeff1;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, .05);
+    margin-bottom: 20px;
+}
+.about-page .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/* Footer */
 footer .row {
     display: flex;
     justify-content: space-between;
